@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile Page</title>
+</head>
+<body>
+    <header>
+        <h1>Hello, I’m John!</h1>
+    </header>
+    <main>
+        <section aria-labelledby="about-heading">
+            <h2 id="about-heading">About Me</h2>
+            <p>I’m learning web development with the MERN stack. This is my first profile page!</p>
+            <figure>
+                <img src="https://avatoon.net/wp-content/uploads/2024/01/Avatoon-Avatar-23-300x300.png" alt="Portrait of John">
+                <figcaption>My Profile Picture</figcaption>
+            </figure>
+        </section>
+        <section aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Me</h2>
+            <form action="/submit" method="post">
+                <div>
+                    <label for="name">Name:</label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        placeholder="Your Name" 
+                        required 
+                        maxlength="50"
+                    >
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="your@email.com" 
+                        required
+                    >
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        placeholder="Say hi!" 
+                        rows="4" 
+                        cols="50" 
+                        required
+                    ></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+    </footer>
+</body>
+</html>
